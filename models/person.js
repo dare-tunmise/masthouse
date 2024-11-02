@@ -6,6 +6,19 @@ const personSchema = new Schema({
     fullName : {
         type : String,
         required: true
+    },
+    age : {
+        type: Number,
+        required: true
+    },
+    lastSeen: {
+        type: Number,
+        required: true
+    },
+    missingStatus: {
+        type: Boolean,
+        required: true
     }
+
 }, {timestamps: true}) 
 
