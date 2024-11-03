@@ -22,3 +22,6 @@ const personSchema = new Schema({
 
 }, {timestamps: true}) 
 
+const Person = model.('Person', personSchema);
+
+module.exports = Person;
